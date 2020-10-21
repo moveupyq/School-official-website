@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../boostrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="../boostrap4/css/fonts.css">
+    <link rel="stylesheet" href="css/School_profile.css">
+    <link rel="stylesheet" href="../index/css/font_an.css">
+    <style>
+        /*.hls_box{*/
+            /*top: 31%;*/
+            /*left: 61%;*/
+        /*}*/
+        body{
+            width: 100%!important;
+        }
+        #hls_tab_con4 .con_box_text{
+            max-height: 1500px;
+            overflow: auto;
+        }
+        .zsdh_box{
+            position: fixed;
+            z-index: 10000000;
+
+        }
+    </style>
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=Lj0DTOCxNhUxwDZjsnHDhOFPPdgCN83O"></script>
+    <title>学校简介</title>
+</head>
+<body>
+<!--banner开始-->
+<section>
+    <div id="hls_banner">
+<!---->
+        <div id="hls_banner_box" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item d-block">
+                    <div class="logo"><img src="images/lojo_text.png" alt=""></div>
+                        <div class="hls_box clearfix">
+                            <div class="tt t0">学 </div>
+                            <div class="tt t1">校 </div>
+                            <div class="tt t2">概</div>
+                            <div class="tt t3">况</div>
+                            <div class="tt t4">School profile</div>
+                        </div>
+                    <img  src="images/xxgk.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--导航栏开始-->
+<header id="hls_header">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler mr-0" type="button" data-toggle="collapse" data-target="#hls_nav_button01" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="hls_nav_button01">
+                    <ul class="navbar-nav mr-auto d-flex">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">首页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../School_profile/School_profile.html" id="School_profile"   >
+                                学校概况
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="School_profile">
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=0">学校简介</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=1">历史沿革</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=2">职能机构</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=3">规章制度</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=4">学校荣誉</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ohter_child/Professional_introduction.html">专业简介</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Part_build_work.html" id="Party_work"   >
+                                党工建设
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Party_work">
+                                <a class="dropdown-item" href="../ohter_child/Part_build_work.html?tid=0">党建工作</a>
+                                <a class="dropdown-item" href="../ohter_child/Part_build_work.html?tid=1">工会工作</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Moral_education_manage.html" id="Moral_education"   >
+                                德育管理
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Moral_education">
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=0">德育理念</a>
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=1">精神培育</a>
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=2">队伍建设</a>
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=3">安全法制</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Teaching_scientific_research.html" id="Teaching_scientific_research"   >
+                                教学科研
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Teaching_scientific_research">
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=1">教师队伍</a>
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=2">教学管理</a>
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=3">科研工作</a>
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=4">高考动态</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Recruit_students_info.html" id="Enrollment_employment"   >
+                                招生就业
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Enrollment_employment">
+                                <a class="dropdown-item" href="../ohter_child/Recruit_students_info.html?tid=0">招生政策</a>
+                                <a class="dropdown-item" href="../ohter_child/Recruit_students_info.html?tid=1">招生计划</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Teacher_student_style.html" id="Teacher_student_style"   >
+                                师生风采
+                            </a>
+                            <!--<div class="dropdown-menu" aria-labelledby="Teacher_student_style">-->
+                                <!--<a class="dropdown-item" href="">最美教师</a>-->
+                                <!--<a class="dropdown-item" href="">最美学生</a>-->
+                                <!--<a class="dropdown-item" href="">师生获奖</a>-->
+                                <!--<a class="dropdown-item" href="">各类光荣榜</a>-->
+                            <!--</div>-->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/school_culture.html" id="school_culture"   >
+                               校园文化
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="school_culture">
+                                <a class="dropdown-item" href="../ohter_child/school_culture.html?tid=0">校园风景</a>
+                                <a class="dropdown-item" href="../ohter_child/school_culture.html?tid=1">楼廊文化</a>
+                                <a class="dropdown-item" href="../ohter_child/school_culture.html?tid=2">视频集锦</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/server.html" id="hls_service"   >
+                                服务地方
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="hls_service">
+                                <a class="dropdown-item" href="../ohter_child/server.html?tid=0">校企合作</a>
+                                <a class="dropdown-item" href="../ohter_child/server.html?tid=1">社区培训</a>
+                                <a class="dropdown-item" href="../ohter_child/server.html?tid=2">电大函授</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--下部分内容-->
+<section>
+    <div id="hls_con_box">
+        <div class="line"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <a class="list-group-item conpic_a"><img src="images/conpic.png" class="w-100" alt=""></a>
+                    <div class="list-group" id="list-tab" role="tablist">
+
+                        <a class="list-group-item list-group-item-action active" id="hls_tab1" data-toggle="list" href="#hls_tab_con1" role="tab" aria-controls="home">学校简介</a>
+                        <a class="list-group-item list-group-item-action" id="hls_tab2" data-toggle="list" href="#hls_tab_con2" role="tab" aria-controls="profile">历史沿革</a>
+                        <a class="list-group-item list-group-item-action" id="hls_tab3" data-toggle="list" href="#hls_tab_con3" role="tab" aria-controls="messages">职能机构</a>
+                        <a class="list-group-item list-group-item-action" id="hls_tab4" data-toggle="list" href="#hls_tab_con4" role="tab" aria-controls="settings">规章制度</a>
+                        <a class="list-group-item list-group-item-action" id="hls_tab5" data-toggle="list" href="#hls_tab_con5" role="tab" aria-controls="settings">学校荣誉</a>
+                    </div>
+                    <!--常用信息-->
+                    <div class="used_news">
+                        <div class="con_box_title">
+                            <span class="">Common 常用信息</span>
+                        </div>
+                        <ul class="d-flex list-unstyled flex-wrap">
+                            <li><a href="../ohter_child/school_culture.html?tid=0">校园风景</a></li>
+                            <li><a href="../ohter_child/Professional_introduction.html">专业简介</a></li>
+                            <li><a href="../ohter_child/Recruit_students_info.html?tid=5">招生政策</a></li>
+                            <li><a href="../ohter_child/Recruit_students_info.html?tid=1">招生计划</a></li>
+                            <li><a href="../ohter_child/Moral_education_manage.html?tid=1">精神培育</a></li>
+                            <li><a href="../ohter_child/Teaching_scientific_research.html?tid=1">教师队伍</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-10">
+                    <span class="glyphicon glyphicon-triangle-top"></span>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <span>你当前的位置：</span>
+                            <li class="breadcrumb-item"><a href="../index.html">学校首页</a></li>
+                            <li class="breadcrumb-item"><a href="School_profile.html">学校概况</a></li>
+                            <li class="breadcrumb-item active changeName_li" aria-current="page">学校简介</li>
+                        </ol>
+                    </nav>
+
+
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="hls_tab_con1" role="tabpanel" aria-labelledby="list-home-list">
+                            <!--学校简介-->
+                            <div class="con_box_title">
+                                <span class="">学校简介</span>
+                            </div>
+                            <div class="con_box_text">
+
+                                <p>海林市综合高中由职业教育中心和艺体特长高中整合而成。是国家级重点职业学校和省级
+                                    艺体特长高中，国家级德育先进单位，黑龙江省花园式学校。</p>
+                                <p>学校坚持“立德为先， 强能为本，特色发展，文化铸魂” 的办学宗旨，以“办适合学生
+                                    发展的优质教育"为办学目标》。秉承 “艺术成就梦想，技能创造未来”办学理念， 充
+                                    分发挥职业教育和艺术教育优势。学校把知行合一， 宜家宜国作为学校的核心价值观，"
+                                    努力打造品行端方、习惯良好、才能过硬的德技双馨人才，使其未来能够为家所依，为国
+                                    所用，推动自我生命健康幸福地成长。</p>
+                                <p>学校围绕职业技术培养和艺术特长培养，构建了职业类的计算机应用、机械加工、旅游服务、
+                                    市场营销、会计电算化和艺考类的美术、书法、音乐、体育等两大专业群，以学生为本，因
+                                    材施教，面向人人，用优质的多元教育成就每个 学生的最佳发展。学校占地面积16万平方米，
+                                    校园环境优雅整洁，配套设施先进完备，教育教学基础雄厚，教师队伍敬业善教。学校办学方
+                                    向明确，“为学生未来发展奠基，让学生成人、成才、成功；为教师自我发展搭台，让教师博学、
+                                    乐教、幸福；为学校持续发展铺路，让学校特色、多元、卓越”。多年来，学校向高等院校输送
+                                    了大量的优秀毕业生，并为地方经济发展做出突出贡献。
+                                </p>
+
+
+                            </div>
+                            <div class="con_box_title">
+                                <span class="">办学理念</span>
+                            </div>
+                            <div class="con_box_text">
+                                <p >艺术成就梦想，技能创造未来。</p>
+                            </div>
+                            <div class="con_box_title">
+                                <span class="">学校地址</span>
+                            </div>
+                            <!--<div id="allmap"></div>-->
+                            <div class="map_pic"><img class="w-100" src="images/map.png" alt=""></div>
+                            <div class="con_box_title last_con">
+                                <span class="">乘车指南</span>
+                            </div>
+                            <div class="con_box_text ">
+                                <p>海林火车站——<span class="text-success font-weight-bold">1</span>路公交车或<span class="text-success font-weight-bold">2</span>路公交车至龙江银行站——转乘<span class="text-success font-weight-bold">4</span>路公交至海林市综合高中站即可
+
+                                </p>
+                                <p>海林北站下车直接乘<span class="text-success font-weight-bold">4</span>路公交车至海林市综合高中即可</p>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="hls_tab_con2" role="tabpanel" aria-labelledby="list-profile-list">
+                            <div class="con_box_title">
+                                <span class="">历史沿革</span>
+                            </div>
+                            <div class="con_box_text text-center">
+                                <img class="w-75 mt-5" src="images/lsyg.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="hls_tab_con3" role="tabpanel" aria-labelledby="list-messages-list">
+                            <div class="con_box_title">
+                                <span class="">职能机构</span>
+                            </div>
+                            <div class="con_box_text text-center">
+                                <img class="w-75 mt-5" src="images/znjg.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hls_tab_con4" role="tabpanel" aria-labelledby="list-settings-list">
+                            <div class="con_box_title">
+                                <span class="">规章制度</span>
+                            </div>
+                            <div class="con_box_text">
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hls_tab_con5" role="tabpanel" aria-labelledby="list-settings-list">
+                            <div class="con_box_title">
+                                <span class="">学校荣誉</span>
+                            </div>
+                            <div class="con_box_text">
+                                <div class="row">
+                                    <div class="pic_box col-6">
+                                        <div class="pic_pic">
+                                            <img  class="w-100 img-thumbnail" src="images/01%20(2).jpg" alt="">
+                                        </div>
+                                        <!--<div class="pic_text text-center">2018年度教育工作目标管理标兵单位</div>-->
+
+
+                                    </div>
+                                    <div class="pic_box col-6">
+                                        <div class="pic_pic">
+                                            <img  class="w-100 img-thumbnail" src="images/01%20(1).jpg" alt="">
+                                        </div>
+                                        <!--<div class="pic_text text-center">2018年度教育工作目标管理标兵单位</div>-->
+
+
+                                    </div>
+                                    <div class="pic_box col-6">
+                                        <div class="pic_pic">
+                                            <img  class="w-100 img-thumbnail" src="images/01%20(3).jpg" alt="">
+                                        </div>
+                                        <!--<div class="pic_text text-center">2018年度教育工作目标管理标兵单位</div>-->
+
+
+                                    </div>
+                                    <div class="pic_box col-6">
+                                        <div class="pic_pic">
+                                            <img  class="w-100 img-thumbnail" src="images/01%20(4).jpg" alt="">
+                                        </div>
+                                        <!--<div class="pic_text text-center">2018年度教育工作目标管理标兵单位</div>-->
+
+
+                                    </div>
+                                    <div class="pic_box col-6">
+                                        <div class="pic_pic">
+                                            <img  class="w-100 img-thumbnail" src="images/01%20(5).jpg" alt="">
+                                        </div>
+                                        <!--<div class="pic_text text-center">2018年度教育工作目标管理标兵单位</div>-->
+
+
+                                    </div>
+                                    <div class="pic_box col-6">
+                                        <div class="pic_pic">
+                                            <img  class="w-100 img-thumbnail" src="images/01%20(6).jpg" alt="">
+                                        </div>
+                                        <!--<div class="pic_text text-center">2018年度教育工作目标管理标兵单位</div>-->
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="logo col-4 d-flex justify-content-center">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="school_info col-8 d-flex align-items-center">
+                版权所有@海林市综合高中|地址:
+                ~~r
+                |邮编: 102206 |京ICP备18054216号
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<!--飘动的招生电话-->
+<section>
+    <div  class="zsdh_box">
+        <img src="../index/images/zsdh.png" alt="">
+    </div>
+</section>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../boostrap4/js/jquery.js"></script>
+<script src="../boostrap4/js/bootstrap.js"></script>
+<script src="../index/js/zsdh_an.js"></script>
+
+<script>
+
+    $("#hls_nav_button01").find("li.nav-item").mouseover(function () {
+        $(this).addClass("show");
+        $(this).children("div").addClass("show");
+    });
+    $("#hls_nav_button01").find("li.nav-item").mouseout(function () {
+        $(this).removeClass("show");
+        $(this).children("div").removeClass("show");
+    });
+
+    $.ajax({
+        url:"../api/getarticledetail",
+        data:"id=104",
+        success:function (data) {
+            let dataInfo = data;
+            $("#hls_tab_con4").find(".con_box_text").append(dataInfo.data);
+        }
+
+
+
+    })
+
+
+</script>
+<!--<script>-->
+    <!--// 百度地图API功能-->
+    <!--var map = new BMap.Map("allmap");-->
+    <!--map.centerAndZoom(new BMap.Point(144.01144, 55.27600), 15);-->
+    <!--// 添加带有定位的导航控件-->
+    <!--var navigationControl = new BMap.NavigationControl({-->
+        <!--// 靠左上角位置-->
+        <!--anchor: BMAP_ANCHOR_TOP_LEFT,-->
+        <!--// LARGE类型-->
+        <!--type: BMAP_NAVIGATION_CONTROL_LARGE,-->
+        <!--// 启用显示定位-->
+        <!--enableGeolocation: true-->
+    <!--});-->
+    <!--map.addControl(navigationControl);-->
+    <!--// 添加定位控件-->
+    <!--var geolocationControl = new BMap.GeolocationControl();-->
+    <!--geolocationControl.addEventListener("locationSuccess", function(e){-->
+        <!--// 定位成功事件-->
+        <!--var address = '';-->
+        <!--address += e.addressComponent.province;-->
+        <!--address += e.addressComponent.city;-->
+        <!--address += e.addressComponent.district;-->
+        <!--address += e.addressComponent.street;-->
+        <!--address += e.addressComponent.streetNumber;-->
+        <!--alert("当前定位地址为：" + address);-->
+    <!--});-->
+    <!--geolocationControl.addEventListener("locationError",function(e){-->
+        <!--// 定位失败事件-->
+        <!--alert(e.message);-->
+    <!--});-->
+    <!--map.addControl(geolocationControl);-->
+<!--</script>-->
+<script src="../index/js/jump_top.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../boostrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="../boostrap4/css/fonts.css">
+    <link rel="stylesheet" href="css/detailed_info.css">
+    <link rel="stylesheet" href="../index/css/font_an.css">
+    <style>
+        #con_box_text p{
+            font-size: 16px!important;
+            letter-spacing: 0!important;
+            font-weight: lighter!important;
+            margin-bottom: 0!important;
+            line-height: 33px!important;
+        }
+        /*标题含有span*/
+        #con_box_text p:nth-of-type(1) span{
+            margin: 20px auto;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        /*标题不含span*/
+        #con_box_text p:nth-of-type(1){
+            margin: 20px 0;
+            font-size: 24px!important;
+            font-weight: bold!important;
+            text-align: center;
+        }
+
+
+        #con_box_text .pydocx-tab {
+            display: inline-block;
+            width: 0em!important;
+        }
+
+        #con_box_text img{
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        body{
+            width: 100%!important;
+        }
+        #con_box_text .st{
+            font-family: "华文隶书";
+            font-size: 25px;
+        }
+        .zsdh_box{
+            position: fixed;
+            z-index: 10000000;
+
+        }
+    </style>
+    <title>详细信息</title>
+</head>
+<body>
+<!--banner开始-->
+<div id="app">
+<section>
+    <div id="hls_banner">
+        <!---->
+        <div id="hls_banner_box" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hls_box clearfix">
+                        <div class="tt t0">{{font_1}}</div>
+                        <div class="tt t1">{{font_2}}</div>
+                        <div class="tt t2">{{font_3}}</div>
+                        <div class="tt t3">{{font_4}}</div>
+                        <div class="tt t4">{{font_en}}</div>
+                    </div>
+                    <div class="logo"><img src="images/lojo_text.png" alt=""></div>
+                    <img :src="banner_img" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--导航栏开始-->
+<header id="hls_header">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler mr-0" type="button" data-toggle="collapse" data-target="#hls_nav_button01" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="hls_nav_button01">
+                    <ul class="navbar-nav mr-auto d-flex">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">首页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../School_profile/School_profile.html" id="School_profile"   >
+                                学校概况
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="School_profile">
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=0">学校简介</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=1">历史沿革</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=2">职能机构</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=3">规章制度</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=4">学校荣誉</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ohter_child/Professional_introduction.html">专业简介</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Part_build_work.html" id="Party_work"   >
+                                党工建设
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Party_work">
+                                <a class="dropdown-item" href="../ohter_child/Part_build_work.html?tid=0">党建工作</a>
+                                <a class="dropdown-item" href="../ohter_child/Part_build_work.html?tid=1">工会工作</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Moral_education_manage.html" id="Moral_education"   >
+                                德育管理
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Moral_education">
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=0">德育理念</a>
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=1">精神培育</a>
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=2">队伍建设</a>
+                                <a class="dropdown-item" href="../ohter_child/Moral_education_manage.html?tid=3">安全法制</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Teaching_scientific_research.html" id="Teaching_scientific_research"   >
+                                教学科研
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Teaching_scientific_research">
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=0">教师队伍</a>
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=1">教学管理</a>
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=2">科研工作</a>
+                                <a class="dropdown-item" href="../ohter_child/Teaching_scientific_research.html?tid=4">高考动态</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Recruit_students_info.html" id="Enrollment_employment"   >
+                                招生就业
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Enrollment_employment">
+                                <a class="dropdown-item" href="../ohter_child/Recruit_students_info.html?tid=0">招生政策</a>
+                                <a class="dropdown-item" href="../ohter_child/Recruit_students_info.html?tid=1">招生计划</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/Teacher_student_style.html" id="Teacher_student_style"   >
+                                师生风采
+                            </a>
+                            <!--<div class="dropdown-menu" aria-labelledby="Teacher_student_style">-->
+                            <!--<a class="dropdown-item" href="">最美教师</a>-->
+                            <!--<a class="dropdown-item" href="">最美学生</a>-->
+                            <!--<a class="dropdown-item" href="">师生获奖</a>-->
+                            <!--<a class="dropdown-item" href="">各类光荣榜</a>-->
+                            <!--</div>-->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/school_culture.html" id="school_culture"   >
+                                校园文化
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="school_culture">
+                                <a class="dropdown-item" href="../ohter_child/school_culture.html?tid=0">校园风景</a>
+                                <a class="dropdown-item" href="../ohter_child/school_culture.html?tid=1">楼廊文化</a>
+                                <a class="dropdown-item" href="../ohter_child/school_culture.html?tid=2">视频集锦</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../ohter_child/server.html" id="hls_service"   >
+                                服务地方
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="hls_service">
+                                <a class="dropdown-item" href="../ohter_child/server.html?tid=0">校企合作</a>
+                                <a class="dropdown-item" href="../ohter_child/server.html?tid=1">社区培训</a>
+                                <a class="dropdown-item" href="../ohter_child/server.html?tid=2">电大函授</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--下部分内容-->
+<section>
+    <div id="hls_con_box">
+        <div class="line"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <a class="list-group-item conpic_a"><img :src="imgInfo.url" class="w-100" alt=""></a>
+                    <div class="list-group" id="list-tab" role="tablist">
+
+                        <a v-for="(item,index) in nowNavInfo" class="list-group-item list-group-item-action"  :class="{'active':index==tid,'d-none':index>now_show_num}"    :href="item.ahref" role="tab" >{{item.text}}</a>
+
+                    </div>
+                    <!--常用信息-->
+                    <!--<div class="used_news">-->
+                        <!--<div class="con_box_title">-->
+                            <!--<span class="font-weight-bold">Common 常用信息</span>-->
+                        <!--</div>-->
+                        <!--<ul class="d-flex list-unstyled flex-wrap">-->
+                            <!--<li><a href="#">招生信息</a></li>-->
+                            <!--<li><a href="#">招生信息</a></li>-->
+                            <!--<li><a href="#">招生信息</a></li>-->
+                            <!--<li><a href="#">招生信息</a></li>-->
+                            <!--<li><a href="#">招生信息</a></li>-->
+                            <!--<li><a href="#">招生信息</a></li>-->
+                        <!--</ul>-->
+
+                    <!--</div>-->
+                </div>
+                <div class="col-10">
+                    <span class="glyphicon glyphicon-triangle-top"></span>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <span>你当前的位置：</span>
+                            <li class="breadcrumb-item"><a href="../index.html">学校首页</a></li>
+                            <li class="breadcrumb-item"><a :href="breadInfo.ahref">{{breadInfo.text}}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" id="li_name">详细信息</li>
+                        </ol>
+                    </nav>
+
+
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="hls_tab_con1" role="tabpanel" aria-labelledby="list-home-list">
+                            <!--学校简介-->
+                            <div class="con_box_title">
+                                <span class="" id="span_name">详细信息</span>
+                            </div>
+                            <div class="con_box_text" id="con_box_text">
+
+                                <!--<span class="st">德玛西亚</span>-->
+
+                                <!--<h5>标题</h5>-->
+                                <!--<video style="width: 100%;height: 400px;" controls="controls" src="../index/images/shoolm4.mp4"></video>-->
+                                <!--<div class="new_text">-->
+                                    <!--<h3>标题</h3>-->
+                                    <!--<span>简介</span>-->
+                                    <!--&lt;!&ndash; 点击详细信息跳转到详细页面 &ndash;&gt;-->
+                                    <!--<a class="btn btn-outline-primary p-0"> 下载</a>-->
+                                <!--</div>-->
+                            </div>
+
+                        </div>
+                        <!--<div class="tab-pane fade" id="hls_tab_con2" role="tabpanel" aria-labelledby="list-profile-list">2</div>-->
+                        <!--<div class="tab-pane fade" id="hls_tab_con3" role="tabpanel" aria-labelledby="list-messages-list">3</div>-->
+                        <!--<div class="tab-pane fade" id="hls_tab_con4" role="tabpanel" aria-labelledby="list-settings-list">4</div>-->
+                        <!--<div class="tab-pane fade" id="hls_tab_con5" role="tabpanel" aria-labelledby="list-settings-list">5</div>-->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="logo col-4 d-flex justify-content-center">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="school_info col-8 d-flex align-items-center">
+                版权所有@海林市综合高中|地址:
+                ~~r
+                |邮编: 102206 |京ICP备18054216号
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+    <!--飘动的招生电话-->
+    <section>
+        <div  class="zsdh_box">
+            <img src="../index/images/zsdh.png" alt="">
+        </div>
+    </section>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../boostrap4/js/jquery.js"></script>
+<script src="../boostrap4/js/bootstrap.js"></script>
+<script src="../boostrap4/js/vue.js"></script>
+<script src="../index/js/zsdh_an.js"></script>
+<script>
+    //根据name更换面包屑导航和左边信息
+    const vm = new Vue({
+        el:"#app",
+        data:{
+            nameInfo:[
+                //首页最新消息部分
+                {
+                    name:'zxxx',
+                    name_c:"首页",
+                    name_ahref:"../index.html",
+                    img:"../ohter_child/images/conpic_L.png",
+                    banner_img:"../index/images/a1.jpg",
+                    show_num:1,
+                    navInfo: [
+                       {
+                           text:"最新消息",
+                           ahref:"../index.html"
+                       }
+
+                   ]
+
+                },
+                //首页轮播消息部分
+                {
+                    img:"../ohter_child/images/conpic_L.png",
+                    banner_img:"../ohter_child/images/banner2.png",
+                    name:'lbxx',
+                    name_c:"首页",
+                    show_num:1,
+                    name_ahref:"../index.html",
+                    navInfo: [
+                        {
+                            text:"最新消息",
+                            ahref:"../index.html"
+                        }
+
+                    ]
+
+                },
+                //党工建设部分
+                {
+                    img:"../ohter_child/images/conpic.png",
+                    banner_img:"../ohter_child/images/dgjs.jpg",
+                    name:'dgjs',
+                    name_c:"党工建设",
+                    show_num:1,
+                    font_1:"党",
+                    font_2:"工",
+                    font_3:"建",
+                    font_4:"设",
+                    font_en:"Part building",
+                    name_ahref:"../ohter_child/Part_build_work.html",
+                    navInfo: [
+                        {
+                            text:"党建工作",
+                            ahref:"../ohter_child/Part_build_work.html?tid=0"
+                        },
+                        {
+                            text:"工会工作",
+                            ahref:"../ohter_child/Part_build_work.html?tid=1"
+                        },
+                        {
+                            text:"党建动态",
+                            ahref:"../ohter_child/Part_build_work.html?tid=2"
+                        },
+                        {
+                            text:"理论学习",
+                            ahref:"../ohter_child/Part_build_work.html?tid=3"
+                        },
+                        {
+                            text:"规章制度",
+                            ahref:"../ohter_child/Part_build_work.html?tid=4"
+                        },
+                        {
+                            text:"党员风采",
+                            ahref:"../ohter_child/Part_build_work.html?tid=5"
+                        }
+                    ]
+
+                },
+                //德育管理部分
+                {
+                    img:"../ohter_child/images/conpic_M.png",
+                    banner_img:"../ohter_child/images/dygl.jpg",
+                    name:'dygl',
+                    name_c:"德育管理",
+                    show_num:3,
+                    font_1:"德",
+                    font_2:"育",
+                    font_3:"管",
+                    font_4:"理",
+                    font_en:"Moral education",
+                    name_ahref:"../ohter_child/Moral_education_manage.html",
+                    navInfo: [
+                        {
+                            text:"德育理念",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=0"
+                        },
+                        {
+                            text:"精神培育",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=1"
+                        },
+                        {
+                            text:"队伍建设",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=2"
+                        },
+                        {
+                            text:"安全法制",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=3"
+                        },
+                        {
+                            text:"体系建设",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=4"
+                        },
+                        {
+                            text:"住宿管理",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=5"
+                        },
+                        {
+                            text:"风采展示",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=6"
+                        },
+                        {
+                            text:"家校共育",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=7"
+                        },
+                        {
+                            text:"书香校园",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=8"
+                        },
+                        {
+                            text:"心里健康",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=9"
+                        },
+                        {
+                            text:"主题活动",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=10"
+                        },
+                        {
+                            text:"班主任",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=11"
+                        },
+                        {
+                            text:"团组织",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=12"
+                        },
+                        {
+                            text:"学工部",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=13"
+                        },
+                        {
+                            text:"安全",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=14"
+                        },
+                        {
+                            text:"法制",
+                            ahref:"../ohter_child/Moral_education_manage.html?tid=15"
+                        }
+
+                    ]
+
+                },
+                //教学科研部分
+                {
+                    img:"../ohter_child/images/conpic_T.png",
+                    banner_img:"../ohter_child/images/jxky.jpg",
+                    name:'jxky',
+                    name_c:"教学科研",
+                    show_num:3,
+                    font_1:"教",
+                    font_2:"学",
+                    font_3:"科",
+                    font_4:"研",
+                    font_en:"Teaching research",
+                    name_ahref:"../ohter_child/Teaching_scientific_research.html",
+                    navInfo: [
+                        {
+                            text:"教师队伍",
+                            ahref:"../ohter_child/Teaching_scientific_research.html?tid=1"
+                        },
+                        {
+                            text:"科学管理",
+                            ahref:"../ohter_child/Teaching_scientific_research.html?tid=2"
+                        },
+                        {
+                            text:"科研工作",
+                            ahref:"../ohter_child/Teaching_scientific_research.html?tid=3"
+                        },
+                        {
+                            text:"高考动态",
+                            ahref:"../ohter_child/Teaching_scientific_research.html?tid=4"
+                        }
+
+                    ]
+
+                },
+                //招生就业
+                {
+                    img:"../ohter_child/images/conpic_R.png",
+                    banner_img:"../ohter_child/images/zsjy.jpg",
+                    name:'zsjy',
+                    name_c:"招生就业",
+                    show_num:1,
+                    font_1:"招",
+                    font_2:"生",
+                    font_3:"就",
+                    font_4:"业",
+                    font_en:"Recruit students",
+                    name_ahref:"../ohter_child/Recruit_students_info.html",
+                    navInfo: [
+                        {
+                            text:"招生政策",
+                            ahref:"../ohter_child/Recruit_students_info.html?tid=0"
+                        },
+                        {
+                            text:"招生计划",
+                            ahref:"../ohter_child/Recruit_students_info.html?tid=1"
+                        },
+                        {
+                            text:"招生问答",
+                            ahref:"../ohter_child/Recruit_students_info.html?tid=2"
+                        },
+                        {
+                            text:"优秀毕业生",
+                            ahref:"../ohter_child/Recruit_students_info.html?tid=3"
+                        },
+                        {
+                            text:"就业咨询",
+                            ahref:"../ohter_child/Recruit_students_info.html?tid=4"
+                        }
+
+                    ]
+
+                },
+                //服务地方
+                {
+                    img:"../ohter_child/images/conpic_SV.png",
+                    banner_img:"../ohter_child/images/fwdf.jpg",
+                    name:'fwdf',
+                    name_c:"服务地方",
+                    show_num:2,
+                    font_1:"服",
+                    font_2:"务",
+                    font_3:"地",
+                    font_4:"方",
+                    font_en:"Server",
+                    name_ahref:"../ohter_child/server.html",
+                    navInfo: [
+                        {
+                            text:"校企合作",
+                            ahref:"../ohter_child/server.html?tid=0"
+                        },
+                        {
+                            text:"社区培训",
+                            ahref:"../ohter_child/server.html?tid=1"
+                        },
+                        {
+                            text:"电大函授",
+                            ahref:"../ohter_child/server.html?tid=2"
+                        }
+
+                    ]
+
+                },
+                //专业简介
+                {
+                    img:"../ohter_child/images/conpic_p.png",
+                    banner_img:"../ohter_child/images/zyjj.jpg",
+                    name:'zyjj',
+                    name_c:"专业简介",
+                    show_num:1,
+                    font_1:"专",
+                    font_2:"业",
+                    font_3:"简",
+                    font_4:"介",
+                    font_en:"Profess introduct",
+                    name_ahref:"../ohter_child/Professional_introduction.html",
+                    navInfo: [
+                        {
+                            text:"专业介绍",
+                            ahref:"../ohter_child/Professional_introduction.html?tid=0"
+                        }
+
+
+                    ]
+
+                }
+
+
+
+            ],
+            getNameInfo:"",
+            nowNavInfo:[
+
+            ],
+//            面包屑导航数据
+             breadInfo:{
+                 text:"",
+                 ahref:""
+             },
+            //图片信息
+            imgInfo:{
+                url:""
+            },
+            //展示的个数
+            now_show_num : 0,
+            //tid获取
+            tid:"",
+            banner_img:"",
+            font_1:"",
+            font_2:"",
+            font_3:"",
+            font_4:"",
+            font_en:""
+
+        },
+        methods:{
+            //获取从模块模块过来的名称
+            getName:function () {
+                let url = window.location.href;
+                // console.log(url);
+                let aaa =new RegExp(/name=[a-zA-Z]*/);
+                let name = url.match(aaa);
+                name = name[0].split("=")[1];
+                this.getNameInfo = name;
+                console.log(name);
+            },
+            //获取tid
+            getTid:function () {
+                let url = window.location.href;
+                // console.log(url);
+                let aaa =new RegExp(/tid=\d*/);
+                let tid = url.match(aaa);
+                tid = tid[0].split("=")[1];
+                this.tid = tid;
+                console.log(tid);
+
+            },
+            //改变面包屑链接
+            change_aherf:function () {
+                this.nameInfo.forEach(val => {
+                    if(val.name == this.getNameInfo){
+                    this.nowNavInfo = val.navInfo;
+                    this.breadInfo.text  = val.name_c;
+                    this.breadInfo.ahref  = val.name_ahref;
+                    this.imgInfo.url=val.img;
+                    this.now_show_num = val.show_num;
+                    this.banner_img = val.banner_img;
+                    this.font_1 = val.font_1;
+                    this.font_2 = val.font_2;
+                    this.font_3 = val.font_3;
+                    this.font_4 = val.font_4;
+                    this.font_en = val.font_en;
+
+
+                }
+                });
+//                console.log(this.nowNavInfo);
+//                console.log(this.breadInfo);
+//                console.log(this.imgInfo);
+            }
+
+        },
+        mounted:function () {
+            this.getName();
+            this.getTid();
+            this.change_aherf();
+        }
+
+
+
+
+
+
+
+
+
+
+
+    })
+
+</script>
+<script>
+
+    $("#hls_nav_button01").find("li.nav-item").mouseover(function () {
+        $(this).addClass("show");
+        $(this).children("div").addClass("show");
+    });
+    $("#hls_nav_button01").find("li.nav-item").mouseout(function () {
+        $(this).removeClass("show");
+        $(this).children("div").removeClass("show");
+    });
+
+
+</script>
+<script>
+   getTextid();
+
+    function getTextid() {
+        //获取url的id;
+        let url = window.location.href;
+        // console.log(url);
+        let aaa =new RegExp(/&id=\d*/);
+        let news_id = url.match(aaa);
+
+        var news_id1 =String(news_id).split("&")[1];
+        console.log(news_id1);
+        $.ajax({
+            url:"../api/getarticledetail",
+            data:news_id1,
+            success:function(data){
+                let dataInfo = data;
+               console.log(dataInfo);
+                if(dataInfo.msg=="html"){
+                    $("#con_box_text").append(dataInfo.data);
+                }else if(dataInfo.msg == "mp4"){
+                    let $h5 = $('<h5 class="text-center">标题</h5>');
+                    $h5.text(dataInfo.data[0].title);
+                    let $new_video = $('<video style="width: 100%;height: 400px;" controls="controls"></video>');
+                    $new_video.attr("src","../"+dataInfo.data[0].path);
+
+                    $("#con_box_text").append($h5);
+                    $("#con_box_text").append($new_video);
+                    console.log($new_video[0]);
+//                $("#xiazai").attr("href","../"+dataInfo.data)
+
+                }else if(dataInfo.msg == "download"){
+                    let $download = $('<div class="new_text"><h3>标题</h3><span>简介</span><a href="../api/downloadfile?'+news_id1+'" class="btn btn-outline-primary p-0"> 下载</a></div>');
+                    $download.find("h3").text(dataInfo.data[0].title);
+                    $download.find("span").text(dataInfo.data[0].synopsis);
+                    $download.find("a").attr("download",dataInfo.data[0].path);
+                    $("#con_box_text").append($download);
+
+
+                }else if(dataInfo.msg == "content"){
+                    $("#con_box_text").append(dataInfo.data[0].content);
+                }
+
+            }
+        })
+    }
+
+    aaa();
+    function aaa() {
+        $("#list-tab").children("a").each(function (index,ele) {
+            if($(ele).hasClass("active")){
+//                console.log($(ele).text());
+                $("#span_name").text($(ele).text());
+                $("#li_name").text($(ele).text());
+
+            }
+
+        })
+
+    }
+
+</script>
+</body>
+</html>

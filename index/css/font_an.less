@@ -1,0 +1,113 @@
+
+@redcolor:rgb(254,0,0);
+@bulecolor:rgb(52,136,209);
+//媒体查询情况
+@media (max-width: 1200px) {
+    //文字的媒体查询
+    .hls_box{
+        top: 32%!important;
+        left: 31%!important;
+        .tt{
+
+            font-size: 28px!important;
+        }
+    }
+    //logo的媒体查询
+    #hls_banner {
+
+        #hls_banner_box {
+            .carousel-item {
+                .logo {
+                    top: 5%;
+                    left: 24%;
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+}
+
+
+//定义动画
+@keyframes  an1{
+    0%{
+        transform: scale(2,2);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1,1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
+.hls_box{
+    margin: 0 auto;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    //width: 500px;
+    position: absolute;
+
+    z-index: 1000;
+
+    .tt{
+        //position: absolute;
+        top: 0;
+        font-size: 58px;
+        letter-spacing: 8px;
+        opacity: 0;
+        float: left;
+        color: rgb(174,14,8);
+        font-weight: bold;
+        text-shadow: 0 3px 3px #FFFFFF;
+        z-index: 1000;
+        transform: scale(2,2);
+
+        //span{
+        //    font-size: 12px;
+        //    position: absolute;
+        //    bottom: 0;
+        //}
+
+    }
+    .t4{
+        //width: 250px;
+        //height: 30px;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 78px;
+        margin-left: 25%;
+
+
+        letter-spacing: 1px;
+        animation: an1 5s 2.0s;
+        animation-fill-mode:forwards;
+    }
+    .t3{
+
+        animation: an1 5s 1.5s;
+        animation-fill-mode:forwards;
+    }
+    .t2{
+
+        animation: an1 5s 1.0s ;
+        animation-fill-mode:forwards;
+    }
+    .t1{
+
+        animation: an1 5s 0.5s;
+        animation-fill-mode:forwards;
+    }
+    .t0{
+
+        animation: an1 5s 0s;
+        animation-fill-mode:forwards;
+    }
+
+
+
+}

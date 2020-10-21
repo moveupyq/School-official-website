@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../boostrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="../boostrap4/css/fonts.css">
+    <link rel="stylesheet" href="css/school_culture.css">
+    <link rel="stylesheet" href="../index/css/font_an.css">
+    <style>
+        .scroll {
+            width:100%;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .scroll ul {
+            height: 220px;
+
+            white-space: nowrap;
+        }
+
+        .scroll ul li{
+
+            background: #EEEEEE;
+            height: 100%;
+            display: inline-block;
+            margin: 10px;
+        }
+        .scroll ul li p{
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .scroll ul img {
+            vertical-align: top;
+            width: 300px;
+            height: 200px;
+        }
+        .t4{
+            margin-left: 11%!important;
+        }
+        [v-cloak] {
+            display: none;
+        }
+        .zsdh_box{
+            position: fixed;
+            z-index: 10000000;
+
+        }
+    </style>
+    <title>师生风采</title>
+</head>
+<body>
+<!--banner开始-->
+<section>
+    <div id="hls_banner">
+        <!---->
+        <div id="hls_banner_box" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hls_box clearfix">
+                        <div class="tt t0">师</div>
+                        <div class="tt t1">生</div>
+                        <div class="tt t2">风</div>
+                        <div class="tt t3">采</div>
+                        <div class="tt t4">Teacher studentStyle</div>
+                    </div>
+                    <div class="logo"><img src="images/lojo_text.png" alt=""></div>
+                    <img src="images/ssfc.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--导航栏开始-->
+<header id="hls_header">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler mr-0" type="button" data-toggle="collapse" data-target="#hls_nav_button01" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="hls_nav_button01">
+                    <ul class="navbar-nav mr-auto d-flex">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">首页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="../School_profile/School_profile.html" id="School_profile"   >
+                                学校概况
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="School_profile">
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=0">学校简介</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=1">历史沿革</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=2">职能机构</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=3">规章制度</a>
+                                <a class="dropdown-item" href="../School_profile/School_profile.html?tid=4">学校荣誉</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Professional_introduction.html">专业简介</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="Part_build_work.html" id="Party_work"   >
+                                党工建设
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Party_work">
+                                <a class="dropdown-item" href="Part_build_work.html?tid=0">党建工作</a>
+                                <a class="dropdown-item" href="Part_build_work.html?tid=1">工会工作</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="Moral_education_manage.html" id="Moral_education"   >
+                                德育管理
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Moral_education">
+                                <a class="dropdown-item" href="Moral_education_manage.html?tid=0">德育理念</a>
+                                <a class="dropdown-item" href="Moral_education_manage.html?tid=1">精神培育</a>
+                                <a class="dropdown-item" href="Moral_education_manage.html?tid=2">队伍建设</a>
+                                <a class="dropdown-item" href="Moral_education_manage.html?tid=3">安全法制</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="Teaching_scientific_research.html" id="Teaching_scientific_research"   >
+                                教学科研
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Teaching_scientific_research">
+                                <a class="dropdown-item" href="Teaching_scientific_research.html?tid=1">教师队伍</a>
+                                <a class="dropdown-item" href="Teaching_scientific_research.html?tid=2">教学管理</a>
+                                <a class="dropdown-item" href="Teaching_scientific_research.html?tid=3">科研工作</a>
+                                <a class="dropdown-item" href="Teaching_scientific_research.html?tid=4">高考动态</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="Recruit_students_info.html" id="Enrollment_employment"   >
+                                招生就业
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Enrollment_employment">
+                                <a class="dropdown-item" href="Recruit_students_info.html?tid=0">招生政策</a>
+                                <a class="dropdown-item" href="Recruit_students_info.html?tid=1">招生计划</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="Teacher_student_style.html" id="Teacher_student_style"   >
+                                师生风采
+                            </a>
+                            <!--<div class="dropdown-menu" aria-labelledby="Teacher_student_style">-->
+                            <!--<a class="dropdown-item" href="">教师风采</a>-->
+                            <!--<a class="dropdown-item" href="">学生风采</a>-->
+                            <!--<a class="dropdown-item" href="">师生获奖</a>-->
+                            <!--<a class="dropdown-item" href="">光荣榜</a>-->
+                            <!--</div>-->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="school_culture.html" id="school_culture"   >
+                                校园文化
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="school_culture">
+                                <a class="dropdown-item" href="school_culture.html?tid=0">校园风景</a>
+                                <a class="dropdown-item" href="school_culture.html?tid=1">楼廊文化</a>
+                                <a class="dropdown-item" href="school_culture.html?tid=2">视频集锦</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="server.html" id="hls_service"   >
+                                服务地方
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="hls_service">
+                                <a class="dropdown-item" href="server.html?tid=0">校企合作</a>
+                                <a class="dropdown-item" href="server.html?tid=1">社区培训</a>
+                                <a class="dropdown-item" href="server.html?tid=2">电大函授</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--下部分内容-->
+<section>
+    <div id="hls_con_box">
+        <div class="line"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <a class="list-group-item conpic_a"><img src="images/conpic_TS.png" class="w-100" alt=""></a>
+                    <div class="list-group" id="list-tab" role="tablist">
+
+                        <a class="list-group-item list-group-item-action active"  data-toggle="list" href="#hls_tab_ssfc" role="tab" >师生风采</a>
+                        <!--<a class="list-group-item list-group-item-action" id="hls_tab2" data-toggle="list" href="#hls_tab_con2" role="tab" aria-controls="profile">楼廊文化</a>-->
+                        <!--<a class="list-group-item list-group-item-action" id="hls_tab3" data-toggle="list" href="#hls_tab_con3" role="tab" aria-controls="messages">视频锦集</a>-->
+                        <!--<a class="list-group-item list-group-item-action" id="hls_tab4" data-toggle="list" href="#hls_tab_con4" role="tab" aria-controls="settings">规章制度</a>-->
+                        <!--<a class="list-group-item list-group-item-action" id="hls_tab5" data-toggle="list" href="#hls_tab_con5" role="tab" aria-controls="settings">学校荣誉</a>-->
+                    </div>
+                    <!--常用信息-->
+                    <div class="used_news">
+                        <div class="con_box_title">
+                            <span class="font-weight-bold">Common 常用信息</span>
+                        </div>
+                        <ul class="d-flex list-unstyled flex-wrap">
+                            <li><a href="Teaching_scientific_research.html?tid=1">教师队伍</a></li>
+                            <li><a href="Teaching_scientific_research.html?tid=3">科研工作</a></li>
+                            <li><a href="Teaching_scientific_research.html?tid=4">高考动态</a></li>
+                            <li><a href="school_culture.html?tid=2">视频集锦</a></li>
+                            <li><a href="school_culture.html?tid=1">楼廊文化</a></li>
+                            <li><a href="../School_profile/School_profile.html?tid=0">学校简介</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-10">
+                    <span class="glyphicon glyphicon-triangle-top"></span>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <span>你当前的位置：</span>
+                            <li class="breadcrumb-item"><a href="../index.html">学校首页</a></li>
+                            <li class="breadcrumb-item"><a href="Teacher_student_style.html">师生风采</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">师生风采</li>
+                        </ol>
+                    </nav>
+
+
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <!--师生风采-->
+                        <div class="tab-pane fade show active" id="hls_tab_ssfc" role="tabpanel" aria-labelledby="list-home-list">
+
+                            <div class="con_box_title">
+                                <span class="">教师风采</span>
+                            </div>
+                            <div class="party_pic clearfix">
+                                <!-- //瀑布流盒子 -->
+                                <div class="wall" id="wall_1">
+                                    <a class="article" v-cloak v-for="(item) in imgArr_zmjs">
+                                        <img :src="item.url" />
+                                        <h2 v-if="item.text" >{{item.text}}</h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="con_box_title">
+                                <span class="">学生风采</span>
+                            </div>
+                            <div class="party_pic clearfix">
+                                <!-- //瀑布流盒子 -->
+                                <div class="wall" id="wall_2">
+                                    <a class="article" v-cloak v-for="(item) in imgArr_zmxs">
+                                        <img :src="item.url" />
+                                        <h2 v-if="item.text">{{item.text}}</h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="con_box_title">
+                                <span class="">师生获奖</span>
+                            </div>
+                            <div class="party_pic clearfix">
+                                <!-- //瀑布流盒子 -->
+                                <div class="wall" id="wall_3">
+                                    <a class="article" v-cloak v-for="(item) in imgArr_sshj">
+                                        <img :src="item.url" />
+                                        <h2 v-if="item.text">{{item.text}}</h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="con_box_title">
+                                <span class="">光荣榜</span>
+                            </div>
+                            <div class="party_pic clearfix">
+                                <div class="scroll">
+                                    <ul>
+                                        <li v-cloak v-for="item in imgArr_glryb">
+                                            <img :src="item.url" alt="">
+                                            <p v-if="item.text">{{item.text}}</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</section>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="logo col-4 d-flex justify-content-center">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="school_info col-8 d-flex align-items-center">
+                版权所有@海林市综合高中|地址:
+                ~~r
+                |邮编: 102206 |京ICP备18054216号
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+<!--飘动的招生电话-->
+<section>
+    <div  class="zsdh_box">
+        <img src="../index/images/zsdh.png" alt="">
+    </div>
+</section>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../boostrap4/js/jquery.js"></script>
+<script src="../boostrap4/js/bootstrap.js"></script>
+<script src="js/jaliswall.js"></script>
+<script src="../index/js/zsdh_an.js"></script>
+<script src="js/scroll.js"></script>
+<script src="../boostrap4/js/vue.js"></script>
+<script>
+
+//    ok!
+    const vm_ssfc = new Vue({
+        el:"#hls_tab_ssfc",
+        data:{
+            imgArr_zmjs:[
+//                {
+//                   url:"images/t1.png",
+//                    text:"描述一句话"
+//                },
+
+
+
+
+
+
+
+
+            ],
+            imgArr_zmxs:[
+
+
+//                {
+//                   url:"images/t1.png",
+//                    text:"描述一句话"
+//                },
+
+
+
+
+            ],
+            imgArr_sshj:[
+//                {
+//                   url:"images/t1.png",
+//                    text:"描述一句话"
+//                },
+
+
+
+
+            ],
+            imgArr_glryb:[
+//                {
+//                   url:"images/t1.png",
+//                    text:"描述一句话"
+//                },
+
+
+
+
+            ]
+
+        },
+        methods:{
+            save_zmjs:function(){
+                $.ajax({
+                    url:"../api/getgradenimage",
+                    data:"type=1",
+                    success:function(data){
+                        console.log(data);
+                        data.data.forEach( val => {
+                            let picobj = {
+
+                            };
+                        picobj.url = "../"+val.path;
+                        if(val.title == null){
+                            val.title = false;
+                        }
+                        picobj.text = val.title;
+                        console.log(picobj.text);
+                        vm_ssfc.imgArr_zmjs.push(picobj);
+
+                    });
+//                        console.log(vm_ssfc.imgArr);
+
+
+                    }
+                })
+            },
+            save_zmxs:function(){
+                $.ajax({
+                    url:"../api/getgradenimage",
+                    data:"type=2",
+                    success:function(data){
+//                        console.log(data);
+                        data.data.forEach( val => {
+                            let picobj = {
+
+                            };
+                        picobj.url = "../"+val.path;
+                        if(val.title == null){
+                            val.title = false;
+                        }
+                            picobj.text = val.title;
+                        vm_ssfc.imgArr_zmxs.push(picobj);
+
+                    });
+//                        console.log(vm_ssfc.imgArr);
+
+
+                    }
+                })
+            },
+            save_sshj:function(){
+                $.ajax({
+                    url:"../api/getgradenimage",
+                    data:"type=3",
+                    success:function(data){
+//                        console.log(data);
+                        data.data.forEach( val => {
+                            let picobj = {
+
+                            };
+
+                        picobj.url = "../"+val.path;
+                        if(val.title == null){
+                            val.title = false;
+                        }
+                            picobj.text = val.title;
+                        vm_ssfc.imgArr_sshj.push(picobj);
+
+                    });
+//                        console.log(vm_ssfc.imgArr);
+
+
+                    }
+                })
+            },
+            save_glryb:function(){
+                $.ajax({
+                    url:"../api/getgradenimage",
+                    data:"type=4",
+                    success:function(data){
+//                        console.log(data);
+                        data.data.forEach( val => {
+                            let picobj = {
+
+                            };
+                        picobj.url = "../"+val.path;
+                        if(val.title == null){
+                            val.title = false;
+                        }
+                        picobj.text = val.title;
+
+
+
+
+                        vm_ssfc.imgArr_glryb.push(picobj);
+
+                    });
+//                        console.log(vm_ssfc.imgArr);
+
+
+                    }
+                })
+            }
+        },
+        mounted:function(){
+            this.save_zmjs();
+            this.save_zmxs();
+            this.save_sshj();
+            this.save_glryb();
+        },
+        watch:{
+            imgArr_zmjs:function () {
+                this.$nextTick(function () {
+                    $('#wall_1').jaliswall({
+                        item: '.article'
+                    });
+                })
+            },
+            imgArr_zmxs:function () {
+                this.$nextTick(function () {
+                    $('#wall_2').jaliswall({
+                        item: '.article'
+                    });
+//                    alert(1);
+                })
+            },
+            imgArr_sshj:function () {
+                this.$nextTick(function () {
+                    $('#wall_3').jaliswall({
+                        item: '.article'
+                    });
+                })
+            },
+            imgArr_glryb:function () {
+                this.$nextTick(function () {
+                    $('.scroll').scroll({
+                        speed: 200,
+                        direction: 'horizantal'
+                    });
+                })
+            }
+        }
+    });
+
+</script>
+<script>
+
+    $("#hls_nav_button01").find("li.nav-item").mouseover(function () {
+        $(this).addClass("show");
+        $(this).children("div").addClass("show");
+    });
+    $("#hls_nav_button01").find("li.nav-item").mouseout(function () {
+        $(this).removeClass("show");
+        $(this).children("div").removeClass("show");
+    });
+
+    $("#hls_tab_ssfc").find(".wall").find(".article").mouseover(function () {
+        $(this).css("width","200px");
+//        console.log($(this));
+    })
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+@media (max-width: 1200px) {
+  .hls_box {
+    top: 32%!important;
+    left: 31%!important;
+  }
+  .hls_box .tt {
+    font-size: 28px!important;
+  }
+  #hls_banner #hls_banner_box .carousel-item .logo {
+    top: 5%;
+    left: 24%;
+    width: 300px;
+  }
+}
+@keyframes an1 {
+  0% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+.hls_box {
+  margin: 0 auto;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 1000;
+}
+.hls_box .tt {
+  top: 0;
+  font-size: 58px;
+  letter-spacing: 8px;
+  opacity: 0;
+  float: left;
+  color: #ae0e08;
+  font-weight: bold;
+  text-shadow: 0 3px 3px #FFFFFF;
+  z-index: 1000;
+  transform: scale(2, 2);
+}
+.hls_box .t4 {
+  font-size: 18px;
+  position: absolute;
+  margin-top: 78px;
+  margin-left: 25%;
+  letter-spacing: 1px;
+  animation: an1 5s 2.0s;
+  animation-fill-mode: forwards;
+}
+.hls_box .t3 {
+  animation: an1 5s 1.5s;
+  animation-fill-mode: forwards;
+}
+.hls_box .t2 {
+  animation: an1 5s 1.0s ;
+  animation-fill-mode: forwards;
+}
+.hls_box .t1 {
+  animation: an1 5s 0.5s;
+  animation-fill-mode: forwards;
+}
+.hls_box .t0 {
+  animation: an1 5s 0s;
+  animation-fill-mode: forwards;
+}
